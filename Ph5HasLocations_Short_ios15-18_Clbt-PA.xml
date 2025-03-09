@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<QueryModelMappingItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>42b0afde-78f2-4129-bdb3-0e6736837f8e</Id>
+  <Name>Ph5HasLocations_Short_ios15-18_Clbt-PA</Name>
+  <Data>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;QueryBuilderMappingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Serialize_ModelType&gt;PA.Data.Models.GenericModel, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_ModelType&gt;
+  &lt;SqlQuery&gt;Select ZASSET.ZDATECREATED,
+  ZASSET.ZADDEDDATE,
+  ZCLOUDMASTER.ZCREATIONDATE,
+  ZADDITIONALASSETATTRIBUTES.ZEXIFTIMESTAMPSTRING,
+  ZASSET.ZDIRECTORY,
+  ZASSET.ZFILENAME,
+  ZADDITIONALASSETATTRIBUTES.ZORIGINALFILENAME,
+  ZCLOUDMASTER.ZORIGINALFILENAME,
+  ZASSET.ZLATITUDE,
+  ZEXTENDEDATTRIBUTES.ZLATITUDE,
+  ZASSET.ZLONGITUDE,
+  ZEXTENDEDATTRIBUTES.ZLONGITUDE,
+  ZADDITIONALASSETATTRIBUTES.ZGPSHORIZONTALACCURACY,
+  ZASSET.Z_PK,
+  ZADDITIONALASSETATTRIBUTES.Z_PK
+From ZASSET
+  Left Join ZADDITIONALASSETATTRIBUTES On ZADDITIONALASSETATTRIBUTES.Z_PK =
+    ZASSET.ZADDITIONALATTRIBUTES
+  Left Join ZEXTENDEDATTRIBUTES On ZEXTENDEDATTRIBUTES.Z_PK =
+    ZASSET.ZEXTENDEDATTRIBUTES
+  Left Join ZCLOUDMASTER On ZASSET.ZMASTER = ZCLOUDMASTER.Z_PK
+Where ZASSET.ZLATITUDE &amp;gt; 0
+Order By ZASSET.ZDATECREATED&lt;/SqlQuery&gt;
+  &lt;Fields&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;3&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field1&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;4&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field2&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;5&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field3&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;6&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field4&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;7&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field5&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;8&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field6&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;9&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field7&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;10&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field8&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;11&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field9&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;12&lt;/MapToColumn&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;Field10&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;0&lt;/MapToColumn&gt;
+      &lt;FormatProviders&gt;
+        &lt;BaseFormatValueProvider xsi:type="DateTimeValueProvider"&gt;
+          &lt;IsPreForamtter&gt;false&lt;/IsPreForamtter&gt;
+          &lt;StringFormat&gt;SecondsFromUTC2001FunctionName&lt;/StringFormat&gt;
+          &lt;HasCustomFormat&gt;false&lt;/HasCustomFormat&gt;
+        &lt;/BaseFormatValueProvider&gt;
+      &lt;/FormatProviders&gt;
+      &lt;FieldName&gt;TimeStamp1&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;2&lt;/MapToColumn&gt;
+      &lt;FormatProviders&gt;
+        &lt;BaseFormatValueProvider xsi:type="DateTimeValueProvider"&gt;
+          &lt;IsPreForamtter&gt;false&lt;/IsPreForamtter&gt;
+          &lt;StringFormat&gt;SecondsFromUTC2001FunctionName&lt;/StringFormat&gt;
+          &lt;HasCustomFormat&gt;false&lt;/HasCustomFormat&gt;
+        &lt;/BaseFormatValueProvider&gt;
+      &lt;/FormatProviders&gt;
+      &lt;FieldName&gt;TimeStamp2&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn&gt;1&lt;/MapToColumn&gt;
+      &lt;FormatProviders&gt;
+        &lt;BaseFormatValueProvider xsi:type="DateTimeValueProvider"&gt;
+          &lt;IsPreForamtter&gt;false&lt;/IsPreForamtter&gt;
+          &lt;StringFormat&gt;SecondsFromUTC2001FunctionName&lt;/StringFormat&gt;
+          &lt;HasCustomFormat&gt;false&lt;/HasCustomFormat&gt;
+        &lt;/BaseFormatValueProvider&gt;
+      &lt;/FormatProviders&gt;
+      &lt;FieldName&gt;TimeStamp3&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+    &lt;DragFieldVM&gt;
+      &lt;IsPlaced&gt;false&lt;/IsPlaced&gt;
+      &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+      &lt;Family /&gt;
+      &lt;Group /&gt;
+      &lt;MapToColumn xsi:nil="true" /&gt;
+      &lt;FormatProviders /&gt;
+      &lt;FieldName&gt;ServiceIdentifier&lt;/FieldName&gt;
+      &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+      &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+    &lt;/DragFieldVM&gt;
+  &lt;/Fields&gt;
+  &lt;GroupFields&gt;
+    &lt;GroupDragFieldVM&gt;
+      &lt;Name&gt;AdditionalInfo&lt;/Name&gt;
+      &lt;Serialization_Fields&gt;
+        &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+        &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+        &lt;Family /&gt;
+        &lt;Group&gt;AdditionalInfo&lt;/Group&gt;
+        &lt;MapToColumn&gt;13&lt;/MapToColumn&gt;
+        &lt;FormatProviders /&gt;
+        &lt;FieldName&gt;Key&lt;/FieldName&gt;
+        &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+        &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+      &lt;/Serialization_Fields&gt;
+      &lt;Serialization_Fields&gt;
+        &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+        &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+        &lt;Family /&gt;
+        &lt;Group&gt;AdditionalInfo&lt;/Group&gt;
+        &lt;MapToColumn&gt;14&lt;/MapToColumn&gt;
+        &lt;FormatProviders /&gt;
+        &lt;FieldName&gt;Value&lt;/FieldName&gt;
+        &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+        &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+      &lt;/Serialization_Fields&gt;
+      &lt;Serialization_Fields&gt;
+        &lt;IsPlaced&gt;false&lt;/IsPlaced&gt;
+        &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
+        &lt;Family /&gt;
+        &lt;Group&gt;AdditionalInfo&lt;/Group&gt;
+        &lt;MapToColumn xsi:nil="true" /&gt;
+        &lt;FormatProviders /&gt;
+        &lt;FieldName&gt;ServiceIdentifier&lt;/FieldName&gt;
+        &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
+        &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
+      &lt;/Serialization_Fields&gt;
+    &lt;/GroupDragFieldVM&gt;
+  &lt;/GroupFields&gt;
+  &lt;ApplicationName&gt;PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
+&lt;/QueryBuilderMappingData&gt;</Data>
+  <Version>1</Version>
+  <AutoRun>false</AutoRun>
+  <IncludeDeleted>false</IncludeDeleted>
+  <Locations>
+    <string>Photos.sqlite</string>
+  </Locations>
+</QueryModelMappingItem>
