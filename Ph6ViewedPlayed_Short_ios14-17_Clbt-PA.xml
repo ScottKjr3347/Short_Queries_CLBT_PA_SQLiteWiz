@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <QueryModelMappingItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>ca23bf2c-46cd-4676-a92e-b1b755e3de4b</Id>
+  <Id>49ac0b68-cea4-4914-84ca-043f3e217c8d</Id>
   <Name>Ph6ViewedPlayed_Short_ios14-17_Clbt-PA</Name>
   <Data>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;QueryBuilderMappingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -238,10 +238,10 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;/Serialization_Fields&gt;
     &lt;/GroupDragFieldVM&gt;
   &lt;/GroupFields&gt;
-  &lt;ApplicationName&gt;PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
+  &lt;ApplicationName&gt;Ph6ViewedPlayed_Short_ios14-17_PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
 &lt;/QueryBuilderMappingData&gt;</Data>
   <Version>1</Version>
-  <AutoRun>false</AutoRun>
+  <AutoRun>true</AutoRun>
   <IncludeDeleted>false</IncludeDeleted>
   <Locations>
     <string>Photos.sqlite</string>

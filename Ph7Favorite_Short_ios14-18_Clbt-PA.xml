@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <QueryModelMappingItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>c214fb00-679f-4deb-a97a-e13ed9a65ef8</Id>
+  <Id>3292d389-d797-4b7a-9651-8e8b7bcec4dc</Id>
   <Name>Ph7Favorite_Short_ios14-18_Clbt-PA</Name>
   <Data>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;QueryBuilderMappingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -25,8 +25,16 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;2&lt;/MapToColumn&gt;
-      &lt;FormatProviders /&gt;
+      &lt;MapToColumn&gt;1&lt;/MapToColumn&gt;
+      &lt;FormatProviders&gt;
+        &lt;BaseFormatValueProvider xsi:type="LookupTableValueProvider"&gt;
+          &lt;IsPreForamtter&gt;false&lt;/IsPreForamtter&gt;
+          &lt;Serialization_TranslatedMappingKeys&gt;
+            &lt;Key xsi:type="xsd:string"&gt;MQ==&lt;/Key&gt;
+            &lt;Value xsi:type="xsd:string"&gt;1-Asset Favorite-1&lt;/Value&gt;
+          &lt;/Serialization_TranslatedMappingKeys&gt;
+        &lt;/BaseFormatValueProvider&gt;
+      &lt;/FormatProviders&gt;
       &lt;FieldName&gt;Field1&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
       &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
@@ -36,7 +44,7 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;3&lt;/MapToColumn&gt;
+      &lt;MapToColumn&gt;2&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field2&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
@@ -47,7 +55,7 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;4&lt;/MapToColumn&gt;
+      &lt;MapToColumn&gt;3&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field3&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
@@ -58,7 +66,7 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;5&lt;/MapToColumn&gt;
+      &lt;MapToColumn&gt;4&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field4&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
@@ -69,7 +77,7 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;6&lt;/MapToColumn&gt;
+      &lt;MapToColumn&gt;5&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field5&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
@@ -80,18 +88,18 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;7&lt;/MapToColumn&gt;
+      &lt;MapToColumn&gt;6&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field6&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
       &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
     &lt;/DragFieldVM&gt;
     &lt;DragFieldVM&gt;
-      &lt;IsPlaced&gt;false&lt;/IsPlaced&gt;
+      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn xsi:nil="true" /&gt;
+      &lt;MapToColumn&gt;7&lt;/MapToColumn&gt;
       &lt;FormatProviders /&gt;
       &lt;FieldName&gt;Field7&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
@@ -170,20 +178,12 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;Serialize_ValueType&gt;PA.Data.Utils.TimeStamp, PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_ValueType&gt;
     &lt;/DragFieldVM&gt;
     &lt;DragFieldVM&gt;
-      &lt;IsPlaced&gt;true&lt;/IsPlaced&gt;
+      &lt;IsPlaced&gt;false&lt;/IsPlaced&gt;
       &lt;IsIgnored&gt;false&lt;/IsIgnored&gt;
       &lt;Family /&gt;
       &lt;Group /&gt;
-      &lt;MapToColumn&gt;1&lt;/MapToColumn&gt;
-      &lt;FormatProviders&gt;
-        &lt;BaseFormatValueProvider xsi:type="LookupTableValueProvider"&gt;
-          &lt;IsPreForamtter&gt;false&lt;/IsPreForamtter&gt;
-          &lt;Serialization_TranslatedMappingKeys&gt;
-            &lt;Key xsi:type="xsd:string"&gt;MQ==&lt;/Key&gt;
-            &lt;Value xsi:type="xsd:string"&gt;1-Asset Favorite-1&lt;/Value&gt;
-          &lt;/Serialization_TranslatedMappingKeys&gt;
-        &lt;/BaseFormatValueProvider&gt;
-      &lt;/FormatProviders&gt;
+      &lt;MapToColumn xsi:nil="true" /&gt;
+      &lt;FormatProviders /&gt;
       &lt;FieldName&gt;ServiceIdentifier&lt;/FieldName&gt;
       &lt;Serialize_FieldType&gt;PA.Data.Fields.Field`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PA.Data, Version=10.5.0.1022, Culture=neutral, PublicKeyToken=null&lt;/Serialize_FieldType&gt;
       &lt;Serialize_ValueType&gt;System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e&lt;/Serialize_ValueType&gt;
@@ -227,10 +227,10 @@ Order By ZASSET.ZMODIFICATIONDATE&lt;/SqlQuery&gt;
       &lt;/Serialization_Fields&gt;
     &lt;/GroupDragFieldVM&gt;
   &lt;/GroupFields&gt;
-  &lt;ApplicationName&gt;PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
+  &lt;ApplicationName&gt;Ph7Favorite_Short_ios14-18_PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
 &lt;/QueryBuilderMappingData&gt;</Data>
   <Version>1</Version>
-  <AutoRun>false</AutoRun>
+  <AutoRun>true</AutoRun>
   <IncludeDeleted>false</IncludeDeleted>
   <Locations>
     <string>Photos.sqlite</string>

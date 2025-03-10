@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <QueryModelMappingItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>125b0b07-7527-4c12-8cef-bc4cd70c73b0</Id>
+  <Id>4f19b7d0-e9c6-4d03-afd2-7fc58cb94f35</Id>
   <Name>Ph6ViewedPlayed_Short_ios18_Clbt-PA</Name>
   <Data>&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;QueryBuilderMappingData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
@@ -238,10 +238,10 @@ Order By ZADDITIONALASSETATTRIBUTES.ZLASTVIEWEDDATE&lt;/SqlQuery&gt;
       &lt;/Serialization_Fields&gt;
     &lt;/GroupDragFieldVM&gt;
   &lt;/GroupFields&gt;
-  &lt;ApplicationName&gt;PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
+  &lt;ApplicationName&gt;Ph6ViewedPlayed_Short_ios18_PhotoData\Photos.sqlite&lt;/ApplicationName&gt;
 &lt;/QueryBuilderMappingData&gt;</Data>
   <Version>1</Version>
-  <AutoRun>false</AutoRun>
+  <AutoRun>true</AutoRun>
   <IncludeDeleted>false</IncludeDeleted>
   <Locations>
     <string>Photos.sqlite</string>
